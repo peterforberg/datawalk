@@ -1,0 +1,373 @@
+/* animations for SVG */
+.svg_link_st:hover {
+  opacity: .8;
+}
+
+.svg_link:hover tspan {
+  fill: #af4c49 !important;
+  opacity: .8;
+}
+
+.svg_link:hover path {
+  fill: #af4c49;
+  opacity: .8;
+}
+
+#shared_purpose_gear {
+  animation-name: spin;
+  animation-play-state: paused;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  fill: #193864;
+}
+
+#data_gear {
+  animation-name: spin;
+  animation-play-state: paused;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  fill: #193864;
+}
+
+#governance_gear {
+  animation-name: spin;
+  animation-play-state: paused;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  fill: #193864;
+}
+
+#financing_gear {
+  animation-name: spin;
+  animation-play-state: paused;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  fill: #193864;
+}
+
+#collective_action_gear {
+  animation-name: spin;
+  animation-play-state: paused;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  fill: #193864;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* anything D3 related */
+.container {
+    width: 250px;
+    height: 250px;
+}
+
+.bar {
+    fill: rgb(172, 131, 226);
+}
+
+.label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* general styling */
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+a {
+    text-decoration: solid underline #017584 2.5px;
+    color: black;
+  }
+  
+  .quote {
+    background-color: #94bdf852;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-left: solid #193864;
+    font-family:serif;
+    font-style: italic;
+    font-size: 25px;
+  }
+
+  .finding1 {
+    background-color: #017584;
+    color: white;
+    opacity: .9;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .finding2 {
+    background-color: #013366;
+    color: white;
+    opacity: .9;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .finding3 {
+    background-color: #4e87bc;
+    color: white;
+    opacity: .9;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .stat-perc {
+    font-size: 60px;
+    font-weight: bold;
+    color: #4e87bc;
+  }
+  
+  .coeffs p{
+    background-color: #017584;
+    opacity: .9;
+    font-weight: bold;
+    font-size: 20px;
+    color:white;
+    height: 12vw;
+    width: 12vw;
+    text-align: center;
+    padding: 4vw 0;
+  }
+  
+  /* .footnote {
+    color:rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+  } */
+  
+  * {
+      box-sizing: border-box;
+    }
+    
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+    
+  /* button {
+      opacity: .5;
+      background-color: #756bb1;
+      color: white;
+      padding: 10px;
+      margin: 5px;
+      outline: none;
+      text-decoration: none;
+      border: none;
+    } */
+
+/* grid style */
+
+    h1 {
+      padding: 10px;
+      text-align: center;
+      font-size: 35px;
+    }
+
+
+/* grid layouts */
+    .grid-container1 {
+      display: grid;
+      grid-template-areas: 
+        'text'
+        'svg';
+    } 
+  
+    .grid-container2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-left: 25%;
+      margin-right: 25%;
+      /* grid-column-gap: 10px; - if you want gap between the columns */
+    } 
+
+    .overview {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1rem;
+      row-gap: 1rem;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 6fr;
+      column-gap: 1rem;
+      row-gap: 1rem;
+    }
+
+    .coeffs {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      column-gap: 1rem;
+      row-gap: 1rem;
+    }
+  
+    .grid-container3 {
+      display: grid;
+      grid-template-areas: 
+        'text' 
+        'displayquiz' 
+        'displaycontent'
+        'next';
+      /* grid-column-gap: 10px; - if you want gap between the columns */
+    } 
+  
+/* grid layout elements */
+
+.text {
+      grid-area: text;
+      margin-left: 25%;
+      margin-right: 25%;
+  }
+  
+.text2 {
+    grid-area: text2;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.text3 {
+  grid-area: text3;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.svg {
+  grid-area: svg;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+    
+  .quiz {
+    display: grid;
+    grid-area: quiz;
+    grid-template-columns: auto auto auto;
+    margin-left: 25%;
+    margin-right: 25%
+  }
+  
+  .displayquiz {
+    display: grid;
+    grid-area: displayquiz;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 25%;
+    margin-right: 25%
+  }
+  
+  .displaycontent {
+    display: grid;
+    grid-area: displaycontent;
+    grid-template-columns: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    justify-content: center;
+  }
+    /* Style the footer */
+    .next {
+      grid-area: next;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+      .grid-container1 {
+        display: grid;
+        grid-template-areas: 
+          'text'
+          'next';
+        /* grid-column-gap: 10px; - if you want gap between the columns */
+      } 
+    
+      /* The grid container */
+      .grid-container2 {
+        display: grid;
+        grid-template-areas: 
+          'text' 
+          'quiz' 
+          'next';
+        /* grid-column-gap: 10px; - if you want gap between the columns */
+      } 
+    
+      .grid-container3 {
+        display: grid;
+        grid-template-areas: 
+          'text' 
+          'displayquiz' 
+          'displaycontent'
+          'next';
+        /* grid-column-gap: 10px; - if you want gap between the columns */
+      } 
+    
+      .text {
+        grid-area: text;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+      
+    .quiz {
+      display: grid;
+      grid-area: quiz;
+      grid-template-columns: auto auto;
+      margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .displayquiz {
+      display: grid;
+      grid-area: displayquiz;
+      grid-template-columns: auto auto;
+      margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .displaycontent {
+      display: grid;
+      grid-area: displaycontent;
+      grid-template-columns: auto;
+      justify-content: center;
+      margin-left: 5%;
+        margin-right: 5%;
+    }
+  
+    #killingbirdq {
+      width: 320px;
+      height: 240px;
+    }
+    .centered {
+      font-size: 1rem;
+      transform: translate(-50%, -250%);
+      -webkit-text-stroke: 0.5px white;
+    }
+    }
